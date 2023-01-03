@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35B3E888-81BE-4DD5-91AF-53ACDF239FAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FOREST.My.MyApplication</StartupObject>
+    <RootNamespace>FOREST</RootNamespace>
+    <AssemblyName>FOREST</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FOREST.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FOREST.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyScope.Designer.vb">
+      <DependentUpon>ApplyScope.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyScope.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLocation.Designer.vb">
+      <DependentUpon>EditLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditModelNumber.Designer.vb">
+      <DependentUpon>EditModelNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditModelNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPOAmount.Designer.vb">
+      <DependentUpon>EditPOAmount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditPOAmount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditScope.Designer.vb">
+      <DependentUpon>EditScope.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditScope.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSerialNumber.Designer.vb">
+      <DependentUpon>EditSerialNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditSerialNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngineeringSchedule.Designer.vb">
+      <DependentUpon>EngineeringSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EngineeringSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOREST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOREST.Designer.vb">
+      <DependentUpon>FOREST.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forestDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forestDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AssignEngineer.Designer.vb">
+      <DependentUpon>AssignEngineer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssignEngineer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forestDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forestDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="forestDataSetWorking.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>forestDataSetWorking.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReadyToShip.Designer.vb">
+      <DependentUpon>ReadyToShip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReadyToShip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterRecord.Designer.vb">
+      <DependentUpon>MasterRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProductionComplete.Designer.vb">
+      <DependentUpon>ProductionComplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionComplete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionHandOff.Designer.vb">
+      <DependentUpon>ProductionHandOff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionHandOff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReleaseEngineering.Designer.vb">
+      <DependentUpon>ReleaseEngineering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReleaseEngineering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesHandoff.Designer.vb">
+      <DependentUpon>SalesHandoff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesHandoff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleJob.Designer.vb">
+      <DependentUpon>ScheduleJob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleUnitIn.Designer.vb">
+      <DependentUpon>ScheduleUnitIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleUnitIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shipped.Designer.vb">
+      <DependentUpon>Shipped.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shipped.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testing.Designer.vb">
+      <DependentUpon>Testing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Testing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitArrival.Designer.vb">
+      <DependentUpon>UnitArrival.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnitArrival.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitIn.Designer.vb">
+      <DependentUpon>UnitIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnitIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitOut.Designer.vb">
+      <DependentUpon>UnitOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnitOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitSchedule.Designer.vb">
+      <DependentUpon>UnitSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnitSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplyScope.resx">
+      <DependentUpon>ApplyScope.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLocation.resx">
+      <DependentUpon>EditLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditModelNumber.resx">
+      <DependentUpon>EditModelNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPOAmount.resx">
+      <DependentUpon>EditPOAmount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditScope.resx">
+      <DependentUpon>EditScope.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSerialNumber.resx">
+      <DependentUpon>EditSerialNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngineeringSchedule.resx">
+      <DependentUpon>EngineeringSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOREST.resx">
+      <DependentUpon>FOREST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssignEngineer.resx">
+      <DependentUpon>AssignEngineer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadyToShip.resx">
+      <DependentUpon>ReadyToShip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterRecord.resx">
+      <DependentUpon>MasterRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionComplete.resx">
+      <DependentUpon>ProductionComplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionHandOff.resx">
+      <DependentUpon>ProductionHandOff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReleaseEngineering.resx">
+      <DependentUpon>ReleaseEngineering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesHandoff.resx">
+      <DependentUpon>SalesHandoff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleJob.resx">
+      <DependentUpon>ScheduleJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleUnitIn.resx">
+      <DependentUpon>ScheduleUnitIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shipped.resx">
+      <DependentUpon>Shipped.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testing.resx">
+      <DependentUpon>Testing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitArrival.resx">
+      <DependentUpon>UnitArrival.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitIn.resx">
+      <DependentUpon>UnitIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitOut.resx">
+      <DependentUpon>UnitOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitSchedule.resx">
+      <DependentUpon>UnitSchedule.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="forestDataSet.xsc">
+      <DependentUpon>forestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="forestDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forestDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forestDataSet.xss">
+      <DependentUpon>forestDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="forestDataSet1.xsc">
+      <DependentUpon>forestDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="forestDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forestDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forestDataSet1.xss">
+      <DependentUpon>forestDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="forestDataSetWorking.xsc">
+      <DependentUpon>forestDataSetWorking.xsd</DependentUpon>
+    </None>
+    <None Include="forestDataSetWorking.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>forestDataSetWorking.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="forestDataSetWorking.xss">
+      <DependentUpon>forestDataSetWorking.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\ApplyScope.datasource" />
+    <None Include="My Project\DataSources\FOREST.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\FOREST.My.MySettings.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MySql\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
